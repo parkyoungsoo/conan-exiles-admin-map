@@ -10,7 +10,7 @@ var boundsY = [ -47.7, -245.3 ]
 var disabledFilters = {}
 var circleMarkerOptions = {
   color: 'black',
-  weight: 1,
+  weight: 1.5,
   fillColor: 'rgb(0, 187, 204)',
   fillOpacity: 1,
   radius: 5
@@ -97,6 +97,7 @@ function drawData (kind) {
       } else if (marker.char_name) {
         group = marker.char_id
         marker.color = colorhash.hex(marker.char_id + marker.char_name)
+        
       } else if (marker.owner) {
         var owner = getOwnerById(marker.owner)
         group = marker.owner
@@ -106,7 +107,8 @@ function drawData (kind) {
         marker.color = 'yellow'
       }
       if (marker.online == 1) {
-        marker.stroke= 'white'
+        marker.color= 'white'
+        marker.stroke= 'red'
       }
 
       marker.tooltip = getTooltipContent(marker)
@@ -265,6 +267,7 @@ function toggleLegend (id) {
 
 function showPlayerList () {
   $.getJSON('api/players', function (data) {
+    console.log('data', data)
     $('.players-list-table').html(generatePlayerTable(data.data))
     $('#playersList').modal()
   })
