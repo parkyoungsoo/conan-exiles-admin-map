@@ -59,7 +59,8 @@ function init() {
   }).addTo(map)
 
   getPlayers()
-  showAll()
+  // showAll()
+  toggleFilter('players')
 }
 
 function getTooltipContent (marker) {

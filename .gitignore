@@ -4,3 +4,4 @@ lib
 node_modules
 game.db*
 .vscode
+/conan-exiles-admin-map.ini
