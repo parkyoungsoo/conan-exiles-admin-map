@@ -150,12 +150,18 @@ function toggleFilter (kind) {
   $('.show-all, .dropdown-item, .filters').removeClass('active')
   $('.filters, .' + kind + '-filter').addClass('active')
 
+  if(kind === 'players'){
+    
+    $('.show-players').addClass('active')
+    $('.show-all, .filters').removeClass('active')
+  }
+
   drawData(kind)
 }
 
 function showAll () {
   dataset = {}
-  $('.dropdown-item, .filters').removeClass('active')
+  $('.dropdown-item, .filters, .show-players').removeClass('active')
   $('.show-all').addClass('active')
   drawData('all')
 }
