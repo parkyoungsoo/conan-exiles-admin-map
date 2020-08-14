@@ -1,4 +1,6 @@
-import sqlite from 'sqlite'
+const sqlite3 = require('sqlite3')
+// const { open } = require('sqlite')
+const sqlite = require('sqlite')
 
 class BaseController {
 
@@ -7,7 +9,9 @@ class BaseController {
   }
 
   async getAll (req, res) {
+    
     try {
+
       const db = await sqlite.open(res.database.file, { mode: sqlite.OPEN_READONLY })
       const data = await db.all(this.getSql())
 
@@ -15,6 +19,7 @@ class BaseController {
         item.kind = item.class || null
       })
 
+      
       res.send({ data: data, update: res.database.time })
       await db.close()
     } catch (e) {
@@ -24,4 +29,4 @@ class BaseController {
 
 }
 
-export default BaseController
+module.exports = BaseController

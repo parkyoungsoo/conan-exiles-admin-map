@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "filters": "Filtros",
   "legend": "Leyenda",
   "player_list": "Lista de jugadores",

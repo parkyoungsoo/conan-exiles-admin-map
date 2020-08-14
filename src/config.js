@@ -1,6 +1,6 @@
-import { existsSync, readFileSync } from 'fs'
-import { join } from 'path'
-import ini from 'ini'
+const { existsSync, readFileSync } = require('fs')
+const {join} = require('path')
+const ini = require('ini')
 
 const configFile = join(process.cwd(), 'conan-exiles-admin-map.ini')
 
@@ -20,4 +20,4 @@ if (existsSync(configFile)) {
   config = Object.assign({}, config, contents)
 }
 
-export default config
+module.exports = config

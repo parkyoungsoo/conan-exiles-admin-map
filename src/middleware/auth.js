@@ -1,5 +1,5 @@
-import auth from 'basic-auth'
-import config from '../config'
+const auth =  require('basic-auth')
+const config =  require('../config')
 
 const authMiddleware = (app) => {
 
@@ -22,4 +22,4 @@ const authMiddleware = (app) => {
 
 }
 
-export default authMiddleware
+module.exports = authMiddleware

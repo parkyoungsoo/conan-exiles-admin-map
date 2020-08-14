@@ -1,5 +1,5 @@
-import BaseController from './BaseController'
-import queries from '../../config/sql'
+const BaseController = require('./BaseController')
+const queries = require('../../config/sql')
 
 class ThronesController extends BaseController {
 

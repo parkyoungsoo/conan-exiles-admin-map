@@ -1,9 +1,9 @@
-import englishLanguage from './en'
-import spanishLanguage from './es'
+const englishLanguage = require('./en')
+const spanishLanguage = require('./es')
 
 const languages = {
   en: englishLanguage,
   es: spanishLanguage
 }
 
-export default languages
+module.exports = languages

@@ -1,4 +1,4 @@
-import apiRoutes from './api'
+const apiRoutes = require('./api')
 
 const routes = (app) => {
 
@@ -23,4 +23,4 @@ const routes = (app) => {
 
 }
 
-export default routes
+module.exports = routes

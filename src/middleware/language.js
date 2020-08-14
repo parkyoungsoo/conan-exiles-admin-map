@@ -1,7 +1,7 @@
-import Polyglot from 'node-polyglot'
+const Polyglot = require('node-polyglot')
 
-import config from '../config'
-import languages from '../languages'
+const config = require('../config')
+const languages = require('../languages')
 
 const languageMiddleware = (app) => {
 
@@ -26,4 +26,4 @@ const languageMiddleware = (app) => {
 
 }
 
-export default languageMiddleware
+module.exports = languageMiddleware

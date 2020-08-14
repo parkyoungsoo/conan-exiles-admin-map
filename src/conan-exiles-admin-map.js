@@ -1,7 +1,7 @@
-import express from 'express'
+const express = require('express')
 
-import middleware from './middleware'
-import routes from './routes'
+const middleware = require('./middleware')
+const routes = require('./routes')
 
 const app = express()
 

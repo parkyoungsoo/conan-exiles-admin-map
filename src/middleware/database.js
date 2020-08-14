@@ -1,5 +1,5 @@
-import { statSync } from 'fs'
-import config from '../config'
+const {statSync} = require('fs')
+const config = require('../config')
 
 const databaseMiddleware = (app) => {
 
@@ -21,4 +21,4 @@ const databaseMiddleware = (app) => {
 
 }
 
-export default databaseMiddleware
+module.exports = databaseMiddleware

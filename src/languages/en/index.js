@@ -1,5 +1,5 @@
-import items from './items'
-import ui from './ui'
+const items = require('./items')
+const ui = require('./ui')
 
 const englishLanguage = {
   "NO_NAME": "Unknown",
@@ -8,4 +8,4 @@ const englishLanguage = {
   ui: ui
 }
 
-export default englishLanguage
+module.exports = englishLanguage

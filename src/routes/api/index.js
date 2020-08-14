@@ -23,4 +23,4 @@ const apiRoutes = (app) => {
 
 }
 
-export default apiRoutes
+module.exports = apiRoutes

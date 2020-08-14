@@ -1,4 +1,4 @@
-export default {
+module.exports = {
 
   // Altar
   "/Game/Systems/Building/Placeables/BP_PL_Altar_Derketo.BP_PL_Altar_Derketo_C": "Pleasure Place of Derketo",

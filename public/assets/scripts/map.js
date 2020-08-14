@@ -267,7 +267,6 @@ function toggleLegend (id) {
 
 function showPlayerList () {
   $.getJSON('api/players', function (data) {
-    console.log('data', data)
     $('.players-list-table').html(generatePlayerTable(data.data))
     $('#playersList').modal()
   })
