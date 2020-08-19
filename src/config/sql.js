@@ -114,6 +114,7 @@ module.exports = {
     where ap.class like '%wildlife%pet%'
     or ap.class like '%pict_wildlife%'
     or ap.class like '%mounts_horse%'
+    or ap.class like '%npc_wildlife%'
   `,
   pippiThespians: `
     select ap.class, ap.x, ap.y, ap.z, pippi.value as buffer
