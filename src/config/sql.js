@@ -126,7 +126,7 @@ module.exports = {
   thralls: `
     select ap.x, ap.y, ap.z, petname.value as name, petinfo.value as info, petowner.value as owner
     from actor_position as ap
-    left outer join properties as petname on petname.object_id = ap.id and petname.name like '%petname'
+    left outer join properties as petname on petname.object_id = ap.id and petname.name like '%thrallname'
     left outer join properties as petinfo on petinfo.object_id = ap.id and petinfo.name like '%thrallinfo'
     left outer join properties as petowner on petowner.object_id = ap.id and petowner.name like '%owner%'
     where ap.class like '%PersistentHumanoidNPC%'
