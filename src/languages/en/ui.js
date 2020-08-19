@@ -28,6 +28,7 @@ module.exports = {
   "pippi_thespians": "Pippi Thespians",
 
   "player": "Player",
+  "horses": "Horses",
   "guild": "Guild",
   "rank": "Rank",
   "level": "Level",
