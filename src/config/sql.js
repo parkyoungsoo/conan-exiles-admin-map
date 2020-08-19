@@ -113,6 +113,7 @@ module.exports = {
     left outer join properties as petowner on petowner.object_id = ap.id and petowner.name like '%owner%'
     where ap.class like '%wildlife%pet%'
     or ap.class like '%pict_wildlife%'
+    or ap.class like '%mounts_horse%'
   `,
   pippiThespians: `
     select ap.class, ap.x, ap.y, ap.z, pippi.value as buffer
