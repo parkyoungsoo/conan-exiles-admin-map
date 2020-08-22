@@ -323,13 +323,32 @@ function showPlayerList() {
   });
 }
 
+function setDateLimit(days, add = true)
+{
+  var now = Date.now();
+  var date = new Date(now);
+  !add ? date.setDate(date.getDate() - days) : date.setDate(date.getDate() + days) ;
+
+  return  date;
+  
+}
+
 function generatePlayerTable(players) {
   var tableContent = "";
 
+  var first_alert = setDateLimit(14, false);
+  var last_alert = setDateLimit(21, false);
+
   players.forEach(function (player) {
     var bgcolor = "#FFFFFF";
-    if (player.online == 1) bgcolor = "#FFFFAA";
-    tableContent += '<tr class="player-list-item" bgcolor="' + bgcolor + '">';
+    var last_online = Date.parse(player.last_online);
+    var date_last_online = new Date(last_online);
+
+    if (date_last_online < first_alert) bgcolor = "yellow";
+    if (date_last_online < last_alert) bgcolor = "red";
+    if (player.online == 1) bgcolor = "green";
+
+    tableContent += '<tr class="player-list-item" style=" background:' + bgcolor + ';">';
     tableContent += "<td>" + player.char_name + "</td>";
     tableContent += "<td>" + player.guild_name + "</td>";
     tableContent += "<td>" + player.rank + "</td>";
