@@ -29,7 +29,7 @@ module.exports = {
   "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenRabbit2.BP_PL_PenRabbit2_C": "Enclos à lapin",
   "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenOstrich.BP_PL_PenOstrich_C": "Enclos à autruche",
   "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenAntilope.BP_PL_PenAntilope_C": "Enclos à antilope",
-  "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenAntilope.BP_PL_PenWildBoar_C": "Enclos à sanglier",
+  "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenWildBoar.BP_PL_PenWildBoar_C": "Enclos à sanglier",
   // Bed
   "/Game/Systems/Building/Placeables/BP_PL_Bed_Common.BP_PL_Bed_Common_C": "Bed",
   "/Game/Systems/Building/Placeables/BP_PL_Bed_Double.BP_PL_Bed_Double_C": "Double bed",
