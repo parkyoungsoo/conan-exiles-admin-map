@@ -37,6 +37,7 @@ module.exports = {
     left outer join characters as c on c.id = b.owner_id
     where b.owner_id > 0
     and ap.class like '%BP_PL_Crafting_Station_AnimalPen%'
+    or ap.class like '%bp_pl_pen%'
   `,
   buildings: `
     select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, b.owner_id from buildings as b
@@ -196,5 +197,6 @@ module.exports = {
     left outer join characters as c on c.id = b.owner_id
     where b.owner_id > 0
     and ap.class like '%wheelofpain%'
+    or ap.class like '%CraftingStation_Crucifix2%'
   `,
 }
