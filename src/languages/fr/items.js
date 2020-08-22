@@ -21,10 +21,14 @@ module.exports = {
   "/Game/Systems/Building/Placeables/BP_PL_Altar_JhebbalSag_T3.BP_PL_Altar_JhebbalSag_T3_C": "Grove of JhebbalSag",
 
   // Animal Pen
-  "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_1.BP_PL_Crafting_Station_AnimalPen_Tier_1_C": "Animal Pen",
-  "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_2.BP_PL_Crafting_Station_AnimalPen_Tier_2_C": "Reinforced Animal Pen",
-  "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_3.BP_PL_Crafting_Station_AnimalPen_Tier_3_C": "Armored Animal Pen",
-  "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Stables.BP_PL_Crafting_Station_AnimalPen_Stables_C": "Ecurie",
+  "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_1.BP_PL_Crafting_Station_AnimalPen_Tier_1_C": "Animal Pen vanilla",
+  "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_2.BP_PL_Crafting_Station_AnimalPen_Tier_2_C": "Reinforced Animal Pen vanilla",
+  "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_3.BP_PL_Crafting_Station_AnimalPen_Tier_3_C": "Armored Animal Pen vanilla",
+  "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Stables.BP_PL_Crafting_Station_AnimalPen_Stables_C": "Ecurie vanilla",
+  "/Game/Mods/Vassharans2_0/Script_cages/VA_BP_PL_Crafting_Station_AnimalPen_Tier_1.VA_BP_PL_Crafting_Station_AnimalPen_Tier_1_C": "Animal Pen",
+  "/Game/Mods/Vassharans2_0/Script_cages/VA_BP_PL_Crafting_Station_AnimalPen_Tier_2.VA_BP_PL_Crafting_Station_AnimalPen_Tier_2_C": "Reinforced Animal Pen",
+  "/Game/Mods/Vassharans2_0/Script_cages/VA_BP_PL_Crafting_Station_AnimalPen_Tier_3.VA_BP_PL_Crafting_Station_AnimalPen_Tier_3_C": "Armored Animal Pen",
+  "/Game/Mods/Vassharans2_0/Script_cages/VA_BP_PL_Crafting_Station_Etables.VA_BP_PL_Crafting_Station_Etables_C": "Ecurie",
   "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenGazelle.BP_PL_PenGazelle_C": "Enclos à gazelle",
   "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenRabbit2.BP_PL_PenRabbit2_C": "Enclos à lapin",
   "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenOstrich.BP_PL_PenOstrich_C": "Enclos à autruche",
@@ -164,9 +168,12 @@ module.exports = {
   "/Game/Systems/Building/Placeables/BP_PL_Water_Well_MitraStatue.BP_PL_Water_Well_MitraStatue_C": "Statue of Refreshment",
 
   // Wheel of pain
-  "/Game/Systems/Building/Placeables/BP_PL_CraftingStation_WheelOfPain.BP_PL_CraftingStation_WheelOfPain_C": "Lesser Wheel of Pain",
-  "/Game/Systems/Building/Placeables/BP_PL_CraftingStation_WheelOfPainXL.BP_PL_CraftingStation_WheelOfPainXL_C": "Wheel of Pain",
-  "/Game/Systems/Building/Placeables/BP_PL_CraftingStation_WheelOfPainXXL.BP_PL_CraftingStation_WheelOfPainXXL_C": "Greater Wheel of Pain",
+  "/Game/Systems/Building/Placeables/BP_PL_CraftingStation_WheelOfPain.BP_PL_CraftingStation_WheelOfPain_C": "Petite roue de la souffrance",
+  "/Game/Systems/Building/Placeables/BP_PL_CraftingStation_WheelOfPainXL.BP_PL_CraftingStation_WheelOfPainXL_C": "Roue de la souffrance",
+  "/Game/Systems/Building/Placeables/BP_PL_CraftingStation_WheelOfPainXXL.BP_PL_CraftingStation_WheelOfPainXXL_C": "Grande roue de la souffrance",
+  "/Game/Mods/Vassharans2_0/Script_cages/VA_BP_PL_CraftingStation_WheelOfPain.VA_BP_PL_CraftingStation_WheelOfPain_C": "Petite roue de la souffrance",
+  "/Game/Mods/Vassharans2_0/Script_cages/VA_BP_PL_CraftingStation_WheelOfPainXL.VA_BP_PL_CraftingStation_WheelOfPainXL_C": "Roue de la souffrance",
+  "/Game/Mods/Vassharans2_0/Script_cages/VA_BP_PL_CraftingStation_WheelOfPainXXL.VA_BP_PL_CraftingStation_WheelOfPainXXL_C": "Grande roue de la souffrance",
   "/Game/Mods/Warrior_mutator_mod/BP_PL_CraftingStation_Crucifix.BP_PL_CraftingStation_Crucifix_C": "Crucifix",
   "/Game/Mods/Warrior_mutator_mod/BP_PL_CraftingStation_Crucifix.BP_PL_CraftingStation_Crucifix2_C": "Crucifix",
 
