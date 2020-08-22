@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.3.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="assets/css/map.css" />
     <script>window.language = <%- language %></script>
   </head>
@@ -80,17 +81,19 @@
             </button>
           </div>
           <div class="modal-body">
-            <table class="table table-responsive">
-              <thead>
-                <th><%= lang['ui.player'] %></th>
-                <th><%= lang['ui.guild'] %></th>
-                <th><%= lang['ui.rank'] %></th>
-                <th><%= lang['ui.level'] %></th>
-                <th><%= lang['ui.last_seen_online'] %></th>
-              </thead>
-              <tbody class="players-list-table">
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="table display" style="width:100%">
+                <thead>
+                  <th><%= lang['ui.player'] %></th>
+                  <th><%= lang['ui.guild'] %></th>
+                  <th><%= lang['ui.rank'] %></th>
+                  <th><%= lang['ui.level'] %></th>
+                  <th><%= lang['ui.last_seen_online'] %></th>
+                </thead>
+                <tbody class="players-list-table">
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal"><%= lang['ui.close'] %></button>
@@ -108,7 +111,12 @@
             </button>
           </div>
           <div class="modal-body">
-            <table class="table table-hover">
+            <table class="table table-hover display">
+              <thead>
+                <th></th>
+                <th><%= lang['ui.name'] %></th>
+                <th></th>
+              </thead>
               <tbody class="legend-list-table">
               </tbody>
             </table>
@@ -127,6 +135,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
     <script src="assets/scripts/colorhash.js"></script>
     <script src="assets/scripts/map.js"></script>
   </body>

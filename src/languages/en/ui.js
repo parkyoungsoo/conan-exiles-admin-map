@@ -4,7 +4,7 @@ module.exports = {
   "player_list": "Player list",
   "view_all": "View all",
   "last_update": "Last update: ",
-
+  "name": "Name",
   "crafting": "All Crafting Placeables",
   "altars": "Altars",
   "thrones": "Thrones",

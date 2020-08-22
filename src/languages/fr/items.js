@@ -24,7 +24,10 @@ module.exports = {
   "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_1.BP_PL_Crafting_Station_AnimalPen_Tier_1_C": "Animal Pen",
   "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_2.BP_PL_Crafting_Station_AnimalPen_Tier_2_C": "Reinforced Animal Pen",
   "/Game/Systems/Building/Placeables/BP_PL_Crafting_Station_AnimalPen_Tier_3.BP_PL_Crafting_Station_AnimalPen_Tier_3_C": "Armored Animal Pen",
-
+  "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenGazelle.BP_PL_PenGazelle_C": "Enclos à gazelle",
+  "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenRabbit2.BP_PL_PenRabbit2_C": "Enclos à lapin",
+  "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenOstrich.BP_PL_PenOstrich_C": "Enclos à autruche",
+  "/Game/Mods/Emberlight/Animal_Husbandry/CraftingStations/BP_PL_PenAntilope.BP_PL_PenAntilope_C": "Enclos à antilope",
   // Bed
   "/Game/Systems/Building/Placeables/BP_PL_Bed_Common.BP_PL_Bed_Common_C": "Bed",
   "/Game/Systems/Building/Placeables/BP_PL_Bed_Double.BP_PL_Bed_Double_C": "Double bed",
@@ -169,6 +172,8 @@ module.exports = {
   "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Artisan.BP_PL_WorkStation_Artisan_C": "Artisan's Worktable",
   "/Game/DLC/DLC_Khitai/Blueprints/BP_PL_WorkStation_Artisan_Khitai.BP_PL_WorkStation_Artisan_Khitai_C": "Khitan Artisan Table",
   "/Game/DLC/DLC_Aquilonia/Blueprints/BP_PL_WorkStation_Artisan_Aquilonia.BP_PL_WorkStation_Artisan_Aquilonia_C": "Aquilonian Artisan Table",
+  "/Game/DLC/DLC_Argos/Blueprints/BP_PL_WorkStation_Artisan_Argos.BP_PL_WorkStation_Artisan_Argos_C": "Argos Artisan Table",
+  "/Game/DLC/DLC_Turan/Blueprints/BP_PL_WorkStation_Artisan_Turan.BP_PL_WorkStation_Artisan_Turan_C": "Turan Artisan Table",
   "/Game/Systems/Building/Placeables/BP_PL_WorkStation_Slaver.BP_PL_WorkStation_Slaver_C": "Torturer's Worktable"
 
 }
