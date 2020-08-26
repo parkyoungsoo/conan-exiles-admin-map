@@ -74,6 +74,7 @@ module.exports = {
     left outer join characters as c on c.id = b.owner_id
     where b.owner_id > 0
     and ap.class like '%BP_PL_Chest%'
+    or ap.class like '%bp_Strongbox%'
   `,
   crabPots: `
     select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, b.owner_id from buildings as b
@@ -133,6 +134,14 @@ module.exports = {
     left outer join properties as petowner on petowner.object_id = ap.id and petowner.name like '%owner%'
     where ap.class like '%PersistentHumanoidNPC%'
     or ap.class like '%EntertainerHumanoidNPC%' 
+  `,
+  thrallsinchest: `
+    select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, i.template_id, i.data, i.owner_id as item_id, b.owner_id from buildings as b
+    left outer join actor_position as ap on b.object_id = ap.id
+    left outer join guilds as g on g.guildid = b.owner_id
+    left outer join characters as c on c.id = b.owner_id
+    left outer join item_inventory as i on i.owner_id = b.object_id
+    where i.template_id = 0
   `,
   pippiThespians: `
     select ap.class, ap.x, ap.y, ap.z, pippi.value as buffer

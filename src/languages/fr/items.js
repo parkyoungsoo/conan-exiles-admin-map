@@ -85,6 +85,7 @@ module.exports = {
   "/Game/Systems/Building/Placeables/BP_PL_Chest_Large_Cupboard.BP_PL_Chest_Large_Cupboard_C": "Cupboard",
   "/Game/Systems/Building/Placeables/BP_PL_Chest_Medium.BP_PL_Chest_Medium_C": "Wooden Box",
   "/Game/Systems/Building/Placeables/BP_PL_Chest_Large.BP_PL_Chest_Large_C": "Large Chest",
+  "/Game/Mods/Warrior_mutator_mod/bp_Strongbox1.bp_Strongbox1_C": "Strongbox",
 
   // Compost Heap
   "/Game/Systems/Building/Placeables/BP_PL_Crafting_Compost.BP_PL_Crafting_Compost_C": "Compost Heap",

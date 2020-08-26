@@ -30,6 +30,7 @@ module.exports = {
   "player": "Player",
   "horses": "Horses",
   "thralls": "Thralls",
+  "thrallsinchest": "Thralls in box",
   "guild": "Guild",
   "rank": "Rank",
   "level": "Level",

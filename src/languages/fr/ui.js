@@ -30,6 +30,7 @@ module.exports = {
   "player": "Joueur",
   "horses": "Chevaux",
   "thralls": "Thralls",
+  "thrallsinchest": "Thralls objet",
   "guild": "Guilde",
   "rank": "Rang",
   "level": "Niveau",

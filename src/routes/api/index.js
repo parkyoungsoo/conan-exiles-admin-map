@@ -15,6 +15,7 @@ const apiRoutes = (app) => {
   require('./horses')(app)
   require('./pets')(app)
   require('./thralls')(app)
+  require('./thrallsinchest')(app)
   require('./pippi/all')(app)
   require('./pippi/thespians')(app)
   require('./players')(app)
