@@ -9,8 +9,6 @@ class ThrallsInChestController {
       const db = await sqlite.open(res.database.file, { mode: sqlite.OPEN_READONLY })
       const data = await db.all(queries.thrallsinchest)
 
-      let tmp = data.filter(o => o.item_id === 20793)
-
       data.map(async (thrallsinchest) => {
 
         thrallsinchest.name = thrallsinchest.class
@@ -29,7 +27,6 @@ class ThrallsInChestController {
 }
 
 function getThrallsInChestName (thrallsinchest) {
-  // const thrallsinchestName = SmartBuffer.fromBuffer(thrallsinchest.name)
 
   let uint8array  = new TextEncoder("utf-8").encode(thrallsinchest.data)
   let string = new TextDecoder("utf-8").decode(uint8array)

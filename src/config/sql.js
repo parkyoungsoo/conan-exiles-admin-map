@@ -142,6 +142,12 @@ module.exports = {
     left outer join characters as c on c.id = b.owner_id
     left outer join item_inventory as i on i.owner_id = b.object_id
     where i.template_id = 0
+    or i.template_id in ( 19086, 19087, 19088)
+    or i.template_id in ( 19617, 19618, 19088, 5360, 5361)
+    or i.template_id in ( 92223, 92226, 92229, 92232, 2711, 2714)
+    or i.template_id between '19094' and '19150'
+    or i.template_id between '6350' and '6363'
+    or i.template_id between '3350' and '3362'
   `,
   pippiThespians: `
     select ap.class, ap.x, ap.y, ap.z, pippi.value as buffer
