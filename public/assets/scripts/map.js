@@ -338,17 +338,19 @@ function generatePlayerTable(players) {
 
   var first_alert = setDateLimit(14, false);
   var last_alert = setDateLimit(21, false);
+  var delete_alert = setDateLimit(30, false);
 
   players.forEach(function (player) {
-    var bgcolor = "#FFFFFF";
+    var style = 'style=" background: #fffff ;"';
     var last_online = Date.parse(player.last_online);
     var date_last_online = new Date(last_online);
 
-    if (date_last_online < first_alert) bgcolor = "yellow";
-    if (date_last_online < last_alert) bgcolor = "red";
-    if (player.online == 1) bgcolor = "green";
+    if (date_last_online < first_alert) style = 'style=" background: yellow ;"';
+    if (date_last_online < last_alert) style = 'style=" background: red ; color: white"';
+    if (date_last_online < delete_alert) style = 'style=" background: black ; color: white"';
+    if (player.online == 1) style = 'style=" background: green ;"';
 
-    tableContent += '<tr class="player-list-item" style=" background:' + bgcolor + ';">';
+    tableContent += '<tr class="player-list-item" '+ style +' >';
     tableContent += "<td>" + player.char_name + "</td>";
     tableContent += "<td>" + player.guild_name + "</td>";
     tableContent += "<td>" + player.rank + "</td>";
