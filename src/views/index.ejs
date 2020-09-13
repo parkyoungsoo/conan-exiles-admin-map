@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= langName %>">
   <head>
     <meta charset="utf-8"/>
-    <title>Conan Exiles Admin Map</title>
+    <title>Conan Exiles Admin Map Login <%= user %></title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.3.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -63,6 +63,20 @@
               <a class="dropdown-item pippi-filter" onClick="toggleFilter('pippi/thespians')"><%= lang['ui.pippi_thespians'] %></a>
             </div>
           </li>
+          <% if (admin === user) { %>
+            <li class="nav-item dropdown filters">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <%= lang['ui.admin_filters'] %>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <a class="dropdown-item penguins-filter" onClick="toggleFilter('penguins')"><%= lang['ui.penguins'] %></a>
+                <a class="dropdown-item tavernbags-filter" onClick="toggleFilter('tavernbags')"><%= lang['ui.tavernbags'] %></a>
+                <a class="dropdown-item svsfx-filter" onClick="toggleFilter('svsfx')"><%= lang['ui.svsfx'] %></a>
+                <a class="dropdown-item waterfalls-filter" onClick="toggleFilter('waterfalls')"><%= lang['ui.waterfalls'] %></a>
+              </div>
+            </li>
+          <% } %>
+
         </ul>
       </div>
     </nav>

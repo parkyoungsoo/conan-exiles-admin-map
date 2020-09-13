@@ -142,9 +142,9 @@ module.exports = {
     left outer join characters as c on c.id = b.owner_id
     left outer join item_inventory as i on i.owner_id = b.object_id
     where i.template_id = 0
-    or i.template_id in ( 19086, 19087, 19088)
     or i.template_id in ( 19617, 19618, 19088, 5360, 5361)
     or i.template_id in ( 92223, 92226, 92229, 92232, 2711, 2714)
+    or i.template_id between '19085' and '19088'
     or i.template_id between '19094' and '19150'
     or i.template_id between '6350' and '6363'
     or i.template_id between '3350' and '3362'
@@ -204,7 +204,8 @@ module.exports = {
     left outer join guilds as g on g.guildid = b.owner_id
     left outer join characters as c on c.id = b.owner_id
     where b.owner_id > 0
-    and ap.class like '%BP_PL_Water_Well%'
+    and ap.class like '%Water_Well%'
+    or ap.class like '%BP_Fountain%'
   `,
   wheelsOfPain: `
     select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, b.owner_id from buildings as b
@@ -214,5 +215,39 @@ module.exports = {
     where b.owner_id > 0
     and ap.class like '%wheelofpain%'
     or ap.class like '%CraftingStation_Crucifix2%'
+  `,
+  penguins: `
+    select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, b.owner_id from buildings as b
+    left outer join actor_position as ap on b.object_id = ap.id
+    left outer join guilds as g on g.guildid = b.owner_id
+    left outer join characters as c on c.id = b.owner_id
+    where b.owner_id > 0
+    and ap.class like '%SvS_BP_Penguin%'
+  `,
+  tavernbags: `
+    select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, b.owner_id from buildings as b
+    left outer join actor_position as ap on b.object_id = ap.id
+    left outer join guilds as g on g.guildid = b.owner_id
+    left outer join characters as c on c.id = b.owner_id
+    where b.owner_id > 0
+    and ap.class like '%SvS_BP_Tavern_Bag%'
+  `,
+  svsfx: `
+    select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, b.owner_id from buildings as b
+    left outer join actor_position as ap on b.object_id = ap.id
+    left outer join guilds as g on g.guildid = b.owner_id
+    left outer join characters as c on c.id = b.owner_id
+    where b.owner_id > 0
+    and ap.class like '%SvS_BP_Fire_0%'
+    or ap.class like '%SvS_BP_Slimeweb%'
+    or ap.class like '%SvS_BP_Dust%'
+  `,
+  waterfalls: `
+    select ap.class, ap.x, ap.y, ap.z, g.name as guild_name, g.guildid as guild_id, c.char_name, c.id as char_id, b.owner_id from buildings as b
+    left outer join actor_position as ap on b.object_id = ap.id
+    left outer join guilds as g on g.guildid = b.owner_id
+    left outer join characters as c on c.id = b.owner_id
+    where b.owner_id > 0
+    and ap.class like '%Waterfall%'
   `,
 }

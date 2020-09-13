@@ -17,8 +17,12 @@ const authMiddleware = (app) => {
       return res.status(401).send('Unauthorized')
     }
 
+    // variable for index.ejs
+    app.locals.user = user.name
+
     return next()
   })
+
 
 }
 

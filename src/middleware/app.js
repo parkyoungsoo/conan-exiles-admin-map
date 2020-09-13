@@ -13,6 +13,10 @@ const applicationMiddleware = (app) => {
   app.engine('ejs', require('ejs').__express)
   app.set('view engine', 'ejs')
 
+  // variable for index.ejs
+  app.locals.langName = config.SETTINGS.language
+  app.locals.admin = config.ADMIN.admin
+
 }
 
 module.exports = applicationMiddleware
