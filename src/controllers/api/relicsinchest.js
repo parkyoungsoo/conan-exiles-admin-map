@@ -11,7 +11,6 @@ class RelicsInChestController {
 
       data.map(async (relicsinchest) => {
 
-        console.log(relicsinchest)
         relicsinchest.name = relicsinchest.class
         relicsinchest.info = getRelicsInChestInfo(relicsinchest, data)
         relicsinchest.owner = relicsinchest.owner_id
