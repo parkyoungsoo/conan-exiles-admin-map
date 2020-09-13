@@ -18,6 +18,7 @@ const apiRoutes = (app) => {
   require('./pippi/thespians')(app)
   require('./players')(app)
   require('./svsfx')(app)
+  require('./relicsinchest')(app)
   require('./tavernbags')(app)
   require('./thralls')(app)
   require('./thrallsinchest')(app)

@@ -30,6 +30,7 @@ module.exports = {
   "players_without_guild": "Joueurs sans guilde",
   "players": "Joueurs",
   "rank": "Rang",
+  "relicsinchest": "Reliques [RP]",
   "tavernbags": "Sacs SVS",
   "teleport_copied": "¡TeleportPlayer copié!",
   "thralls": "Thralls",
