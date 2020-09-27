@@ -29,6 +29,7 @@ module.exports = {
   "player": "Joueur",
   "players_without_guild": "Joueurs sans guilde",
   "players": "Joueurs",
+  "playerfeats_list": "Liste des métiers par joueurs",
   "rank": "Rang",
   "relicsinchest": "Reliques [RP]",
   "tavernbags": "Sacs SVS",

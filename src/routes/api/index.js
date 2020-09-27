@@ -10,6 +10,7 @@ const apiRoutes = (app) => {
   require('./crabpots')(app)
   require('./crafting')(app)
   require('./fishnets')(app)
+  require('./feats')(app)
   require('./horses')(app)
   require('./maprooms')(app)
   require('./penguins')(app)

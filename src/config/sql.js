@@ -258,4 +258,12 @@ module.exports = {
     left outer join item_inventory as i on i.owner_id = b.object_id
     where i.template_id between '6765921' and '6765939'
   `,
+  feats:`
+    select i.owner_id, i.template_id as feat_id,c.level as level, c.char_name as char_name, quote(g.name) as guild_name, quote(g.guildid) as guild_id,
+    case c.rank WHEN '3' then 'Guild master' WHEN '2' then 'Officer' WHEN '1' then 'Member' WHEN '0' then 'Recruit' ELSE c.rank END rank
+    from item_inventory as i
+    left outer join characters as c on c.id = i.owner_id
+    left outer join guilds as g on g.guildid = c.guild
+    where i.inv_type = 6
+  `,
 }

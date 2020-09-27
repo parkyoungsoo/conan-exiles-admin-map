@@ -323,6 +323,7 @@ function showPlayerList() {
   });
 }
 
+
 function setDateLimit(days, add = true)
 {
   var now = Date.now();
@@ -366,4 +367,30 @@ function getPlayers() {
   $.getJSON("api/players", function (data) {
     playersData = data.data;
   });
+}
+
+function showPlayerFeatsList() {
+  $.getJSON("api/feats", function (data) {
+    console.log(data)
+    $(".playersFeats-list-table").html(generatePlayerFeatTable(data.data));
+    $("#playersFeatsList table").DataTable();
+    $("#playersFeatsList").modal();
+  });
+}
+
+function generatePlayerFeatTable(feats) {
+  var tableContent = "";
+
+  feats.forEach(function (feat) {
+
+    tableContent += '<tr class="feat-list-item" >';
+    tableContent += "<td>" + feat.char_name + "</td>";
+    tableContent += "<td>" + feat.level + "</td>";
+    tableContent += "<td>" + feat.featname + "</td>";
+    tableContent += "<td>" + feat.guild_name + "</td>";
+    tableContent += "<td>" + feat.rank + "</td>";
+    tableContent += "</tr>";
+  });
+
+  return tableContent;
 }
